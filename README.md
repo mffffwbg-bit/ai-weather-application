@@ -1,6 +1,6 @@
 # Weather Application
 
-A modern, real-time weather application built with React and WeatherAPI. Features dynamic backgrounds based on time of day, geolocation support, and a beautiful glassmorphism UI design.
+A modern, real-time weather application built with React and WeatherAPI. Features dynamic backgrounds based on time of day, geolocation support, and a beautiful glassmorphism UI design with secure API key management.
 
 ## 🌟 Features
 
@@ -11,6 +11,7 @@ A modern, real-time weather application built with React and WeatherAPI. Feature
 - 📱 **Responsive Design** - Works on all devices
 - ✨ **Glassmorphism UI** - Modern, elegant design with blur effects
 - ⏰ **Last Updated** - Shows when data was last fetched
+- 🔐 **Secure API Key** - Environment variables for sensitive data
 
 ## 🛠️ Technologies Used
 
@@ -18,6 +19,7 @@ A modern, real-time weather application built with React and WeatherAPI. Feature
 - **API:** WeatherAPI.com
 - **Styling:** CSS3 (Glassmorphism, Animations)
 - **Features:** Geolocation API, Fetch API
+- **Security:** Environment variables (.env)
 
 ## 🚀 Getting Started
 
@@ -28,6 +30,15 @@ npm start
 ```
 
 Opens http://localhost:3000 in your browser
+
+### Environment Setup
+
+Create a `.env` file in the root directory:
+```env
+REACT_APP_WEATHER_API_KEY=your_api_key_here
+```
+
+Get your free API key from [WeatherAPI.com](https://www.weatherapi.com)
 
 ### Usage
 
@@ -64,6 +75,13 @@ src/
 - **Hover Effects** - Interactive elements
 - **Mobile Optimized** - Responsive grid layout
 
+## 🔐 Security
+
+- **API Key Protection** - Stored in `.env` file
+- **Not in Repository** - `.gitignore` excludes sensitive data
+- **Environment Variables** - `process.env.REACT_APP_WEATHER_API_KEY`
+- **Best Practice** - Never commit API keys to version control
+
 ## 📊 API Integration
 
 Uses **WeatherAPI.com** free tier:
@@ -72,19 +90,14 @@ Uses **WeatherAPI.com** free tier:
 - Location detection
 - Weather condition icons
 
-## 🔐 Environment
-
-API Key stored in `App.js`:
-```javascript
-const API_KEY = '7d41b65d4cd548e89c2185510260401';
-```
-
 ## 💡 Learning Outcomes
 
 - RESTful API consumption
 - Geolocation API implementation
 - React Hooks (useState, useEffect)
 - Dynamic styling based on data
+- Environment variable management
+- Security best practices
 - Error handling and validation
 - Responsive web design
 
@@ -93,12 +106,13 @@ const API_KEY = '7d41b65d4cd548e89c2185510260401';
 - **Search**: Any city worldwide
 - **Geolocation**: Browser-based location detection
 - **Real-time**: Current conditions updated instantly
-- **Icons**: Weather condition icons from OpenWeather
+- **Icons**: Weather condition icons from WeatherAPI
+- **Day/Night Themes**: Automatic background changes
 
 ## 📱 Responsive Breakpoints
 
-- Desktop: Full layout
-- Tablet: Adjusted spacing
+- Desktop: Full layout with all details
+- Tablet: Adjusted spacing and sizing
 - Mobile: Single column, optimized text sizes
 
 ## 🎓 University Project
@@ -107,7 +121,15 @@ Created as a demonstration of:
 - API integration skills
 - React component development
 - Modern UI/UX design principles
+- Security and best practices
 - Real-world application development
+
+## 📝 Notes
+
+- API key resets monthly (1M calls)
+- Geolocation requires user permission
+- Weather data updates in real-time
+- Background transitions are smooth
 
 ## Author
 
@@ -116,4 +138,3 @@ mffffwbg-bit
 ## License
 
 MIT
-
