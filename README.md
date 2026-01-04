@@ -118,8 +118,3 @@ mffffwbg-bit
 MIT
 ```
 
-**Kaydet, push et:**
-```
-git add README.md
-git commit -m "Add Weather App README documentation"
-git push
